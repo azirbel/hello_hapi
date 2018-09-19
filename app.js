@@ -15,6 +15,14 @@ Server.route({
     }
 });
 
+Server.route({
+    method: 'GET',
+    path: '/',
+    handler: function (request, reply) {
+      reply('OK')
+    }
+});
+
 // don't start server if this file was required
 
 if (!module.parent) {
